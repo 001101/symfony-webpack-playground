@@ -1,6 +1,4 @@
-import React from 'react';
-import styled from 'styled-components';
+import View from './View';
+import {addView} from 'app-bundle';
 
-export default styled.div`
-    color: #fa0;
-`;
+export default () => {addView('view', View)};
