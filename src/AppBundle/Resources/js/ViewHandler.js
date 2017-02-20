@@ -7,5 +7,6 @@ export function addView(key, view) {
 }
 
 export default (props) => {
+    console.log(map);
     return React.createElement(map[props.view], props.parameters);
 };

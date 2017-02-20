@@ -1,8 +1,12 @@
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const glob = require('glob');
+
 module.exports = {
-    entry: './src/AppBundle/Resources/js/index.js',
+    entry: glob.sync('./src/*/Resources/js/index.js'),
     output: {
-        path: 'web/js',
-        filename: 'bundle.js'
+        path: 'web',
+        filename: '[name].bundle.js'
     },
     module: {
         loaders: [
@@ -13,10 +17,19 @@ module.exports = {
                 query: {
                     presets: ['react', 'es2015'],
                     plugins: [
-                        'transform-class-properties'
+                        'transform-class-properties',
+                        'syntax-dynamic-import'
                     ]
                 }
             }
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            filename: 'admin.html'
+        }),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'commons'
+        })
+    ]
 };
