@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@sulu/sulu-ui@file:///Users/daniel/Development/massiveart/sulu-ui":
+  version "0.1.0"
+  dependencies:
+    react "^15.4.2"
+
 asap@~2.0.3:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.5.tgz#522765b50c3510490e52d7dcfe085ef9ba96958f"

@@ -1,8 +1,9 @@
 {
   "name": "app-bundle",
-  "version": "develop",
+  "version": "0.0.1",
   "main": "index.js",
   "dependencies": {
-    "react": "^15.4.2"
+    "react": "^15.4.2",
+    "@sulu/sulu-ui": "file:../../../../../sulu-ui"
   }
 }
