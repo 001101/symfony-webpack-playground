@@ -4,6 +4,6 @@
   "main": "index.js",
   "dependencies": {
     "react": "^15.4.2",
-    "@sulu/sulu-ui": "file:../../../../../sulu-ui"
+    "sulu-ui": "next"
   }
 }

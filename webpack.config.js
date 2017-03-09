@@ -17,8 +17,7 @@ module.exports = {
                 query: {
                     presets: ['react', 'es2015'],
                     plugins: [
-                        'transform-class-properties',
-                        'syntax-dynamic-import'
+                        'transform-class-properties'
                     ]
                 }
             }

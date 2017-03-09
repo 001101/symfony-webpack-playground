@@ -1,5 +1,5 @@
 import React from 'react';
-import {Table, Pagination} from '@sulu/sulu-ui';
+import {Table, Pagination} from 'sulu-ui';
 
 export default class DataGrid extends React.Component {
     render() {
